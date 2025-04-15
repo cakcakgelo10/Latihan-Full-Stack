@@ -1,0 +1,22 @@
+/* Inline css  (di dalam tag) */
+<h1 style="color: blue;">Halo!</h1>
+
+/* Internal CSS (di dalam <style> tag di <head>) */
+<style> 
+    h1 {color: blue;}
+</style>
+
+/* Eksternal CSS (file .css terpisah) */
+<link rel="stylesheet" href="style.css">
+
+/* Properti CSS Umum
+Properti	Fungsi
+color	Warna teks
+background-color	Warna latar
+font-size	Ukuran teks
+font-family	Jenis font
+text-align	Posisi teks
+padding	Jarak ke dalam
+margin	Jarak ke luar
+border	Garis tepi
+width / height	Ukuran */
