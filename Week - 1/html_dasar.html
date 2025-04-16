@@ -1,63 +1,86 @@
-<!-- Stukrur dasar -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-        <title>Profil Saya</title>
-        <style>
-          body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-          }
-      
-          h1 {
-            color: #0077cc;
-          }
-      
-          img {
-            border-radius: 50%;
-            border: 3px solid #0077cc;
-          }
-      
-          ul {
-            list-style-type: square;
-            text-align: left;
-            display: inline-block;
-          }
-      
-          a {
-            color: #cc0000;
-            text-decoration: none;
-          }
-        </style>
-      </head>
-      
-      <body>
-    <h1>Nama saya reza</h1>
-    <p>Expert Programmer</p>
-    <img src="#" alt="Foto Profil">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-    <h2>Hobi saya:</h2>
-    <ul>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header,footer {
+      background-color: #0077cc;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 2rem;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    section {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 20px 6px rgba(0,0,0,0.1);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Profil Saya</h1>
+    <nav>
+      <a href="#">Home</a> |
+      <a href="#">Tentang</a> |
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2> Nama saya Reza</h2>
+      <p>Saya Seorang fullstack developer.</p>
+      <img src="#" alt="Foto Profil">
+    </section>
+
+    <section>
+      <h3>Hobi</h3>
+      <ul>
         <li>Ngoding</li>
-        <li>Ngojay</li>
-        <li>Ngokang</li>
-    </ul>
+        <li>Ngopi</li>
+        <li>Ngocok</li>
+      </ul>
+    </section>
+  </main>
 
-    <p>Kunjungi saya di:
-        <a href="#">Kepo</a>
-    </p>
+  <footer>
+    <p>&copy; 2025 - Dibuat dengan semangat 👨‍💻</p>
+  </footer>
 </body>
 </html>
-
-<!-- element penting -->
-<!-- <h1> s/d </h6> (judul / heading)
-<p> (paragraf)
-<a href=""></a>  (link)
-<img src="" alt=""> (gambar)    
-<ul></ul>, <ol></ol>, <li></li> (lis,bullet,angka)
-<div></div> (pembungkus)
-<span></span> (teks inline) -->
