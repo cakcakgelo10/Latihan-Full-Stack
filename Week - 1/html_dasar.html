@@ -50,6 +50,32 @@
       border-radius: 8px;
       margin-top: 10px;
     }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    input, textarea {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 0.5rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #005fa3;;
+    }
   </style>
 </head>
 <body>
@@ -76,6 +102,22 @@
         <li>Ngopi</li>
         <li>Ngocok</li>
       </ul>
+
+      <section>
+        <h3>Kontak Saya</h3>
+        <form>
+          <label for="nama">Nama:</label><br>
+          <input type="text" id="nama" name="nama"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="pesan">Pesan:</label><br>
+          <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea><br><br>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
     </section>
   </main>
 
