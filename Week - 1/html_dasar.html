@@ -1,82 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial;
-      background-color: #f0f0f0;
-      color: #333;
-    }
-
-    header,footer {
-      background-color: #0077cc;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    main {
-      padding: 2rem;
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    section {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 8px;
-      width: 300px;
-      box-shadow: 0 20px 6px rgba(0,0,0,0.1);
-    }
-
-    img {
-      width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-    }
-
-    input, textarea {
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      padding: 0.5rem;
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button {
-      background-color: #005fa3;;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style_dasar.css" />
+  <title>Profil Reza</title>
 </head>
 <body>
   <header>
@@ -89,12 +17,14 @@
   </header>
 
   <main>
+    <!-- Profil -->
     <section>
-      <h2> Nama saya Reza</h2>
-      <p>Saya Seorang fullstack developer.</p>
-      <img src="#" alt="Foto Profil">
+      <h2>Nama saya Reza</h2>
+      <p>Saya seorang Fullstack Developer.</p>
+      <img src="https://via.placeholder.com/300x200" alt="Foto Profil">
     </section>
 
+    <!-- Hobi -->
     <section>
       <h3>Hobi</h3>
       <ul>
@@ -102,27 +32,29 @@
         <li>Ngopi</li>
         <li>Ngocok</li>
       </ul>
+    </section>
 
-      <section>
-        <h3>Kontak Saya</h3>
-        <form>
-          <label for="nama">Nama:</label><br>
-          <input type="text" id="nama" name="nama"><br><br>
+    <!-- Form Kontak -->
+    <section>
+      <h3>Kontak Saya</h3>
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
 
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
 
-          <label for="pesan">Pesan:</label><br>
-          <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea><br><br>
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea>
 
-          <button type="submit">Kirim</button>
-        </form>
-      </section>
+        <button type="submit">Kirim</button>
+      </form>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 - Dibuat dengan semangat 👨‍💻</p>
   </footer>
+
 </body>
 </html>
