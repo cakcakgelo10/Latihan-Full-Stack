@@ -1,0 +1,123 @@
+// 🧩 Soal 1: Menyapa Daftar Teman dengan Umur
+// Kamu punya daftar nama dan umur teman-temanmu. Buat function yang menyapa tiap teman, dan kasih tahu apakah dia cukup umur (>=17) atau tidak.
+// 📝 Contoh input:
+// let teman = [
+//   { nama: "Fakhri", umur: 18 },
+//   { nama: "Rifqi", umur: 15 },
+//   { nama: "Akbar", umur: 20 }
+// ];
+// ✅ Output yang diharapkan:
+// Halo Fakhri! Kamu sudah cukup umur.
+// Halo Rifqi! Kamu belum cukup umur.
+// Halo Akbar! Kamu sudah cukup umur.
+
+// jawaban :
+
+// let teman = [
+//     { nama: "Fakhri", umur: 18 },
+//     { nama: "Rifqi", umur: 15 },
+//     { nama: "Akbar", umur: 20 }
+//   ];
+  
+//   function sapaSemua(daftarTeman) {
+//     for (let t of daftarTeman) {
+//       if (t.umur >= 17) {
+//         console.log("Halo "+ t.nama + " Kamu sudah cukup umur !");
+        
+//     } else {
+//         console.log("Halo " + t.nama + " Kamu belum cukup umur !");
+//     }
+//     }
+//   }
+
+//   sapaSemua(teman);
+
+// ====================================================================================
+
+// 🧩 Soal 2: Total dan Rata-Rata Nilai
+// Buat function hitungNilai(nama, nilaiArray) yang menerima:
+// nama → nama siswa
+// nilaiArray → array nilai
+// Tampilkan total dan rata-rata nilainya.
+
+// 📝 Contoh:
+// hitungNilai("Reza", [80, 75, 90, 60]);
+// Reza memiliki total nilai: 305
+// Rata-rata: 76.25
+
+// jawaban :
+
+// function hitungNilai(nama, nilaiArray) {
+  
+//   let total = 0;
+//   for (let nilai  of nilaiArray) {
+//     total += nilai;
+//   }
+
+//   let rataRata = total / nilaiArray.length;
+
+//   console.log(nama + " Memiliki total nilai: " + total);
+//   console.log("Rata - rata : " + rataRata);
+
+// }
+
+// ====================================================================================
+
+// hitungNilai("Reza", [70, 80, 90, 100]);
+
+// 🧩 Soal 3: Kelompokkan Angka Ganjil & Genap
+// 🎯 Tujuan:
+// Dapatkan dua kelompok:
+// Angka genap
+// Angka ganjil
+// Gunakan looping dan conditional
+
+// jawaban :
+
+// function kelompokAngka(arrayAngka) {
+//   let genap = [];
+//   let ganjil = [];
+
+//     for (let angka of arrayAngka) {
+//       if (angka % 2 === 0) {
+//         genap.push(angka); 
+//       } else {
+//         ganjil.push(angka);
+//       }
+//   }
+
+//   console.log("Angka Genap : ", genap.join(", "));
+//   console.log("Angka Ganjil: ", ganjil.join(", "));
+// }
+
+// kelompokAngka([1,2,3,4,5,6,7,8,9,10])
+
+// =============================================================
+
+// 🧩 Soal Bonus: Cek Role User
+// 📜 Instruksi:
+// Buat function cekAkses(nama, role):
+// Jika role adalah "admin" → tampilkan:
+// ➔ "Halo [nama], Anda memiliki akses penuh."
+// Jika role adalah "user" → tampilkan:
+// ➔ "Halo [nama], Anda memiliki akses terbatas."
+// Jika role selain itu → tampilkan:
+// ➔ "Halo [nama], role tidak dikenali."
+// jawaban:
+
+function cekAkses(nama, role) {
+  if (role === "admin") {
+    console.log("Halo " + nama + ", Anda memiliki akses penuh.");
+
+  } else if (role === "user") {
+    console.log("Halo " + nama + ", Anda memiliki akses terbatas");
+    
+  } else {
+    console.log("Halo " + nama + ", role tidak dikenali.");
+  }
+
+}
+
+cekAkses("Reza", "admin");
+cekAkses("Fakhri", "user");
+cekAkses("Akbar", "moderator");
