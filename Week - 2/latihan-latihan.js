@@ -105,19 +105,101 @@
 // ➔ "Halo [nama], role tidak dikenali."
 // jawaban:
 
-function cekAkses(nama, role) {
-  if (role === "admin") {
-    console.log("Halo " + nama + ", Anda memiliki akses penuh.");
+// function cekAkses(nama, role) {
+//   if (role === "admin") {
+//     console.log("Halo " + nama + ", Anda memiliki akses penuh.");
 
-  } else if (role === "user") {
-    console.log("Halo " + nama + ", Anda memiliki akses terbatas");
+//   } else if (role === "user") {
+//     console.log("Halo " + nama + ", Anda memiliki akses terbatas");
     
-  } else {
-    console.log("Halo " + nama + ", role tidak dikenali.");
-  }
+//   } else {
+//     console.log("Halo " + nama + ", role tidak dikenali.");
+//   }
 
+// }
+
+// cekAkses("Reza", "admin");
+// cekAkses("Fakhri", "user");
+// cekAkses("Akbar", "moderator");
+
+// ================================================================================================
+
+// ✏️ Latihan 1: Cek Ganjil atau Genap (Function)
+// Buat function cekGanjilGenap(angka):
+// Jika angka genap, tampilkan "Angka [angka] adalah genap."
+// Jika angka ganjil, tampilkan "Angka [angka] adalah ganjil."
+// Contoh:
+// cekGanjilGenap(4); // Output: Angka 4 adalah genap.
+// cekGanjilGenap(7); // Output: Angka 7 adalah ganjil.
+
+// function cekGanjilGenap(angka) {
+
+//   if (angka % 2 === 0 ) {
+//     console.log("Angka " + angka + " Adalah Genap.");
+//   } else {
+//     console.log("Angka " + angka + " Adalah Ganjil.");  
+//   }
+// }
+
+// cekGanjilGenap(1);
+// cekGanjilGenap(2);
+
+// ===================================================================================================
+
+// ✏️ Latihan 2: Penilaian Siswa (Function)
+// Buat function penilaian(nilai):
+// Jika nilai >= 90 ➔ tampilkan "A"
+// Jika nilai >= 75 ➔ tampilkan "B"
+// Jika nilai >= 60 ➔ tampilkan "C"
+// Kalau kurang dari 60 ➔ tampilkan "D"
+// Contoh:
+// penilaian(95); // Output: A
+// penilaian(70); // Output: B
+// penilaian(50); // Output: D
+// jawaban :
+
+// function penilaian(nilai) {
+//   if (nilai >= 90) {
+//     console.log("A");
+
+//   } else if (nilai >= 75) {
+//     console.log("B");
+
+//   } else if (nilai >= 60) {
+//     console.log("C");
+    
+//   } else {
+//     console.log("D");
+//   }
+// }
+
+// penilaian(95);
+// penilaian(80);
+// penilaian(70);
+// penilaian(50);
+
+// =========================================================================================================
+
+// ✏️ Latihan 3: Daftar Belanja (Array + Function)
+// Buat function tampilkanBelanja(daftarBarang):
+// Loop semua barang
+// Tampilkan satu per satu dengan format: ➔ "Saya membeli: [barang]"
+// Contoh:
+// let daftar = ["Beras", "Telur", "Minyak", "Gula"];
+// tampilkanBelanja(daftar);
+// Output:
+// Saya membeli: Beras
+// Saya membeli: Telur
+// Saya membeli: Minyak
+// Saya membeli: Gula
+// jawaban :
+
+let daftar = ["Beras", "Telur", "Minyak", "Gula"];
+
+function tampilkanBelanja(daftarBarang) {
+  for (let barang of daftarBarang) {
+    console.log("Saya membeli : " + barang);
+  }  
 }
 
-cekAkses("Reza", "admin");
-cekAkses("Fakhri", "user");
-cekAkses("Akbar", "moderator");
+tampilkanBelanja(daftar);
