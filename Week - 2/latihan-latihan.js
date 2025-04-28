@@ -194,12 +194,100 @@
 // Saya membeli: Gula
 // jawaban :
 
-let daftar = ["Beras", "Telur", "Minyak", "Gula"];
+// let daftar = ["Beras", "Telur", "Minyak", "Gula"];
 
-function tampilkanBelanja(daftarBarang) {
-  for (let barang of daftarBarang) {
-    console.log("Saya membeli : " + barang);
-  }  
+// function tampilkanBelanja(daftarBarang) {
+//   for (let barang of daftarBarang) {
+//     console.log("Saya membeli : " + barang);
+//   }  
+// }
+
+// tampilkanBelanja(daftar);
+
+// =============================================================================================================
+
+// ✏️ Soal 1: Menjumlahkan Semua Harga Barang
+// Buat function jumlahkanHarga(barang):
+// Parameter: array berisi harga-harga
+// Jumlahkan semua harga
+// Tampilkan total harga ke console
+
+// 📋 Contoh:
+// let hargaBarang = [10000, 20000, 5000, 30000];
+// jumlahkanHarga(hargaBarang);
+
+// ✅ Output yang diharapkan:
+// Total harga belanja: Rp65000
+
+// jawaban : 
+
+// function jumlahkanHarga(barang) {
+//   let total = 0;
+//   for (let harga  of barang ) {
+//     total += harga;
+//   }
+//   return total;
+// }
+
+// let total = jumlahkanHarga([10000, 20000, 5000, 30000]);
+// console.log("Total: Rp" + total);
+
+// ================================================================================================================
+
+// ✏️ Soal 2: Cek Panjang Nama
+// Buat function cekPanjangNama(nama):
+// Jika nama lebih dari 5 huruf ➔ tampilkan "Nama panjang"
+// Jika 5 huruf atau kurang ➔ tampilkan "Nama pendek"
+
+// 📋 Contoh:
+// cekPanjangNama("Reza"); // Output: Nama pendek
+// cekPanjangNama("Fakhri"); // Output: Nama panjang
+
+// jawaban :
+
+// function cekPanjangNama(nama) {
+//   if (nama.length >= 5) {
+//     console.log(nama + " Nama Panjang");
+
+//   } else {
+//     console.log(nama + " Nama Pendek");
+//   } 
+//   }
+
+//   cekPanjangNama("Reza");
+//   cekPanjangNama("Fakhri");
+
+// ======================================================================================================================
+
+// ✏️ Soal 3: Cek Barang Tertentu
+// Buat function cekBarang(barangDicari, daftarBarang):
+// Jika barangDicari ada dalam daftarBarang, tampilkan: "Barang ditemukan"
+// Kalau tidak, tampilkan: "Barang tidak ditemukan"
+// Gunakan metode .includes() untuk array.
+
+// 📋 Contoh:
+
+// let daftar = ["Beras", "Telur", "Minyak", "Gula"];
+
+// cekBarang("Minyak", daftar); // Output: Barang ditemukan
+// cekBarang("Sabun", daftar);  // Output: Barang tidak ditemukan
+
+// jawaban:
+
+let daftar = ["Beras", "Telur", "Minyak"];
+
+function cekBarang(barangDicari, daftarBarang) {
+ 
+  if (daftarBarang.includes(barangDicari)) {
+    console.log("Barang ditemukan");
+    
+  } else {
+    console.log("Barang tidak ditemukan");
+    
+  }
+
 }
-
-tampilkanBelanja(daftar);
+  
+cekBarang("Minyak", daftar);
+cekBarang("Sabun", daftar);
+  
