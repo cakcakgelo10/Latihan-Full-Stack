@@ -277,15 +277,12 @@
 let daftar = ["Beras", "Telur", "Minyak"];
 
 function cekBarang(barangDicari, daftarBarang) {
- 
   if (daftarBarang.includes(barangDicari)) {
     console.log("Barang ditemukan");
-    
   } else {
     console.log("Barang tidak ditemukan");
     
   }
-
 }
   
 cekBarang("Minyak", daftar);
