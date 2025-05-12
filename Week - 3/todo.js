@@ -18,6 +18,16 @@ tombol.addEventListener("click", function () {
     item.remove();
   });
 
+  item.addEventListener("click", function () {
+    item.classList.toggle("selesai");
+  });
+
+  input.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      tombol.click();
+    }
+  });
+  
   daftar.appendChild(item);
   input.value = ""; // kosongkan input
 });
