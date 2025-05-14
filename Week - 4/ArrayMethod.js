@@ -29,3 +29,9 @@ let cari = number.find(function(item) {
     return item > 15;
 });
 console.log(cari); // 20 
+
+// 📝 Catatan Penting:
+// 1. forEach → melakukan aksi (misal: tampilkan, cetak)
+// 2. map → ubah data dan buat array baru
+// 3. filter → pilih data berdasarkan kondisi
+// 4. find → ambil satu item pertama yang cocok
