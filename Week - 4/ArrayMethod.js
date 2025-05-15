@@ -30,8 +30,25 @@ let cari = number.find(function(item) {
 });
 console.log(cari); // 20 
 
+// 5. sort()
+// Mengurutkan isi array
+
+// Default (alfabet / string):
+let nama = ["Reza", "Fakhri", "Akbar"];
+nama.sort();
+console.log(nama);
+
+// Angka (harus pakai fungsi pembanding)
+let r = [20, 5, 10, 3];
+r.sort(function(a, b) { // r.sort((a, b) => b - a); untuk kebalikan
+    return a - b; 
+});
+console.log(r);
+
+
 // 📝 Catatan Penting:
 // 1. forEach → melakukan aksi (misal: tampilkan, cetak)
 // 2. map → ubah data dan buat array baru
 // 3. filter → pilih data berdasarkan kondisi
 // 4. find → ambil satu item pertama yang cocok
+// 5.  Mengurutkan isi array
