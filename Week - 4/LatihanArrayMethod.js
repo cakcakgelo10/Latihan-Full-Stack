@@ -21,3 +21,20 @@ let ganjil = nomor.filter(function(item) {
 });
 console.log(ganjil);
 
+// 4. Latihan find()
+// Cari angka pertama yang lebih dari 50 dari array ini:
+let nilai = [40, 45, 60, 30, 80];
+let cari = nilai.find(function(item) {
+    return item > 50;
+});
+console.log(cari);
+
+// 5. Latihan sort();
+// Urutkan array ini dari terkecil ke terbesar:
+let harga = [10000, 2500, 7500, 15000];
+harga.sort(function(a, b) {
+    return a - b;
+}) ;
+console.log(harga);
+
+
