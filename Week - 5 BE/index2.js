@@ -14,12 +14,26 @@ app.get('/api/products', (req, res) => {
 
 // POST produk baru
 app.post('/api/products', (req, res) => {
-    const newProduct = req.body;
-    products.push(newProduct);
-    res.status(201).json({
-        message: 'Produk berhasil ditambahkan',
-        data: newProduct
-    });
+  const { id, name, price } = req.body;
+
+  // Cek semua field wajib ada
+  if (!id || !name || !price) {
+    return res.status(400).json({ message: "Semua field (id, name, price) wajib diisi!" });
+  }
+
+  // Cek tipe data
+  if (typeof id !== "number" || typeof name !== "string" || typeof price !== "number") {
+    return res.status(400).json({ message: "Tipe data tidak valid. id & price harus number, name harus string." });
+  }
+
+  // Jika lolos semua validasi, simpan
+  const newProduct = { id, name, price };
+  products.push(newProduct);
+
+  res.status(201).json({
+    message: "Produk berhasil ditambahkan",
+    data: newProduct
+  });
 });
 
 // PUT update produk berdasarkan ID
